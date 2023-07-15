@@ -1,0 +1,33 @@
+Algorithm analyzeSentence
+    Variables:
+        sentence: String
+        length: Integer
+        wordCount: Integer
+        vowelCount: Integer
+        character: Character
+
+    Begin
+        length <- 0
+        wordCount <- 0
+        vowelCount <- 0
+        sentence <- Read input sentence
+
+        For each character in sentence
+            If character is a space
+                wordCount <- wordCount + 1
+            End If
+
+            If character is a vowel
+                vowelCount <- vowelCount + 1
+            End If
+
+            length <- length + 1
+        End For
+
+        wordCount <- wordCount + 1
+        length <- length - 1
+
+        Output "Length of the sentence:", length
+        Output "Number of words:", wordCount
+        Output "Number of vowels:", vowelCount
+    End
